@@ -12,6 +12,6 @@ Gives you a list of user information, FEEL free to open issue
 
 ![image](https://user-images.githubusercontent.com/114992249/214316672-d73a66c4-2e1a-4185-bafc-ce8355eb0629.png)
 
-<p>As you can see, user found in this card</p>
+<p>As you can see, The user you wanted appear in this card</p>
 
 That's it!
