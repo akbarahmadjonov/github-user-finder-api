@@ -6,14 +6,14 @@ const elInputError = document.querySelector(".valid-danger");
 const APIURL = "https://api.github.com/users";
 
 const createUserCard = (array, node) => {
-  node.innerHTML = [];
+  // node.innerHTML = [];
   const cardHTML = document.createElement("div");
   cardHTML.innerHTML = `
         <div class="card mt-3 p-4 border border-1 rounded-1">
             <div class='row'>
               <div class='col-12 col-lg-6 w-25'>
 
-              <div >
+              <div>
                 <img class='w-100 rounded-circle' src="${array.avatar_url}" alt="${array.name}">
                 <p class='mt-2 fw-bold'>${array.name}</p>
                 <p class='login-pc fs-4'>${array.login}</p>
@@ -38,7 +38,7 @@ const createUserCard = (array, node) => {
                 </div>
             </div>
         </div>`;
-  node.innerHTML(cardHTML);
+  node.appendChild(cardHTML);
 };
 
 async function getUser() {
@@ -54,15 +54,15 @@ async function getUser() {
   createUserCard(data, elResultList);
 }
 
-async function run() {
-  try {
-    getUser();
-  } catch (err) {
-    console.log(err);
-  }
-}
+// async function run() {
+//   try {
+//     getUser();
+//   } catch (err) {
+//     console.log(err);
+//   }
+// }
 
-run();
+// run();
 
 elForm.addEventListener("submit", (evt) => {
   evt.preventDefault();
