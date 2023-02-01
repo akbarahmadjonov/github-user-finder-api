@@ -6,7 +6,7 @@ const elInputError = document.querySelector(".valid-danger");
 const APIURL = "https://api.github.com/users";
 
 const createUserCard = (array, node) => {
-  // node.innerHTML = [];
+  node.innerHTML = [];
   const cardHTML = document.createElement("div");
   cardHTML.innerHTML = `
         <div class="card mt-3 p-4 border border-1 rounded-1">
